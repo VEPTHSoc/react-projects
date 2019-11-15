@@ -1,0 +1,46 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    position: relative;
+  }  
+
+:root {
+    --color-border: #EAECED;
+    --border-radius: .5rem;
+  }
+.searchbar {
+    z-index: 100;
+    font-size: 5vmin;
+    box-shadow: 0 .5rem 1rem rgba(black, 0.1);
+    border-radius: var(--border-radius);
+    margin-bottom: 20vh;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    padding: .75em;
+    background-color: #F7F9FB;
+    border-bottom: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+  
+    &:focus-within {
+      box-shadow: 0 0 3px #92A4DE; 
+    }
+  
+    > svg {
+      width: 1em;
+      height: 1em;
+      margin-right: .5em;
+      stroke: #9297A8;
+    }
+  }
+  
+  .search-input {
+    appearance: none;
+    border: none;
+    background: transparent;
+  
+    /* Because we're using focus-within above. Probably needs @supports */
+    &:focus { outline: none; }
+  
+  }
