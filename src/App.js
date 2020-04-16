@@ -1,13 +1,15 @@
-import React from 'react';
-import './App.css';
-import Searchbox from './container/Searchbox';
+import BinaryMode from "./components/binary";
+import { Container } from "@material-ui/core";
+import Nav from "./nav";
+import React from "react";
 
-class App extends React.Component{
-  render(){
-    return(
-      <Searchbox />
-    )
-  }
+function App() {
+  return (
+    <Container>
+      <Nav></Nav>
+      <BinaryMode></BinaryMode>
+    </Container>
+  );
 }
 
 export default App;
