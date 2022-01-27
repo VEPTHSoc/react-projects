@@ -19,7 +19,7 @@
     "react-tilt": "^0.1.4",
     "react-typing-effect": "^2.0.2",
     "react-typist": "^2.0.5",
-    "three": "^0.112.1",
+    "three": "^0.137.0",
     "tilt.js": "^1.2.1"
   },
   "scripts": {
